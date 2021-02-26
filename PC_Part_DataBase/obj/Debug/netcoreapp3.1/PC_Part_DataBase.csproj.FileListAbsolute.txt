@@ -1,0 +1,15 @@
+E:\Programos\Unfinished\PC_Part_DataBase\PC_Part_DataBase\bin\Debug\netcoreapp3.1\PC_Part_DataBase.exe
+E:\Programos\Unfinished\PC_Part_DataBase\PC_Part_DataBase\bin\Debug\netcoreapp3.1\PC_Part_DataBase.deps.json
+E:\Programos\Unfinished\PC_Part_DataBase\PC_Part_DataBase\bin\Debug\netcoreapp3.1\PC_Part_DataBase.runtimeconfig.json
+E:\Programos\Unfinished\PC_Part_DataBase\PC_Part_DataBase\bin\Debug\netcoreapp3.1\PC_Part_DataBase.runtimeconfig.dev.json
+E:\Programos\Unfinished\PC_Part_DataBase\PC_Part_DataBase\bin\Debug\netcoreapp3.1\PC_Part_DataBase.dll
+E:\Programos\Unfinished\PC_Part_DataBase\PC_Part_DataBase\bin\Debug\netcoreapp3.1\PC_Part_DataBase.pdb
+E:\Programos\Unfinished\PC_Part_DataBase\PC_Part_DataBase\obj\Debug\netcoreapp3.1\PC_Part_DataBase.csprojAssemblyReference.cache
+E:\Programos\Unfinished\PC_Part_DataBase\PC_Part_DataBase\obj\Debug\netcoreapp3.1\PC_Part_DataBase.MainWindows.resources
+E:\Programos\Unfinished\PC_Part_DataBase\PC_Part_DataBase\obj\Debug\netcoreapp3.1\PC_Part_DataBase.csproj.GenerateResource.cache
+E:\Programos\Unfinished\PC_Part_DataBase\PC_Part_DataBase\obj\Debug\netcoreapp3.1\PC_Part_DataBase.AssemblyInfoInputs.cache
+E:\Programos\Unfinished\PC_Part_DataBase\PC_Part_DataBase\obj\Debug\netcoreapp3.1\PC_Part_DataBase.AssemblyInfo.cs
+E:\Programos\Unfinished\PC_Part_DataBase\PC_Part_DataBase\obj\Debug\netcoreapp3.1\PC_Part_DataBase.csproj.CoreCompileInputs.cache
+E:\Programos\Unfinished\PC_Part_DataBase\PC_Part_DataBase\obj\Debug\netcoreapp3.1\PC_Part_DataBase.dll
+E:\Programos\Unfinished\PC_Part_DataBase\PC_Part_DataBase\obj\Debug\netcoreapp3.1\PC_Part_DataBase.pdb
+E:\Programos\Unfinished\PC_Part_DataBase\PC_Part_DataBase\obj\Debug\netcoreapp3.1\PC_Part_DataBase.genruntimeconfig.cache
