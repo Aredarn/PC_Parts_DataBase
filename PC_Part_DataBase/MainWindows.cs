@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Data;
 using System.Windows.Forms;
+using System.IO;
 
 namespace PC_Part_DataBase
 {
@@ -11,12 +12,15 @@ namespace PC_Part_DataBase
             InitializeComponent();
         }
 
+
+        //Variables
         int IdNumber = 0;
+        Files Files = new Files();
+        public DataTable parts = new DataTable();
 
-
-        private void MainWindows_Load(object sender, EventArgs e)
+        public void MainWindows_Load(object sender, EventArgs e)
         {
-            DataTable parts = new DataTable();
+            
 
             parts.Columns.Add("ID");
             parts.Columns.Add("Components");
@@ -40,6 +44,7 @@ namespace PC_Part_DataBase
         private void Confirm_Click(object sender, EventArgs e)
         {
             IdNumber++;
+            parts.Rows.Add(IdNumber, Manufacturer);
         }
 
         private void Components_Listbox_SelectedIndexChanged(object sender, EventArgs e)
@@ -48,9 +53,7 @@ namespace PC_Part_DataBase
             int correctItem = Components_Listbox.SelectedIndex;
 
             //Stores all of the case manufacturers (not finished)
-            string[] Manufacturer_Case = {"Aigo", "AMAX Information Technologies", "Antec","AOpen","ASRock","Asus","be quiet!","CaseLabs(defunct)","Chassis Plans","Cooler Master","Corsair","Dell",
-                    "Deepcool","DFI","ECS","EVGA Corporation","Foxconn", "Fractal Design","Gigabyte Technology","IBall","Lian Li","MSI","MiTAC","NZXT","Phanteks","Razer","Rosewill","Seasonic",
-                    "Shuttle","SilverStone Technology","Thermaltake","Ultra Products","XFX","Zalman"};
+            string[] Manufacturer_Case = {Files.PCcases[]};
 
             //Stores all the CPU manufacturers
             string[] Manufacturer_CPU = {"AMD" ,"Intel"};
@@ -168,36 +171,51 @@ namespace PC_Part_DataBase
  };
 
 
+            Manufacturers_Listbox.Items.Clear();
 
             switch (correctItem)
             {
                 case 0:
-                    Manufacturers_Listbox.Items.Clear();
                     Manufacturers_Listbox.Items.AddRange(Manufacturer_Case);
                     break;
                 case 1:
-                    Manufacturers_Listbox.Items.Clear();
                     Manufacturers_Listbox.Items.AddRange(Manufacturer_CPU);
                     break;
                 case 2:
-                    Manufacturers_Listbox.Items.Clear();
                     Manufacturers_Listbox.Items.AddRange(Manufacturer_CPUCooler);
                     break;
                 case 3:
-                    Manufacturers_Listbox.Items.Clear();
                     Manufacturers_Listbox.Items.AddRange(Manufacturer_GPU);
                     break;
                 case 4:
-                    Manufacturers_Listbox.Items.Clear();
                     Manufacturers_Listbox.Items.AddRange(Manufacturer_Mainboard);
                     break;
                 case 5:
-                    Manufacturers_Listbox.Items.Clear();
                     Manufacturers_Listbox.Items.AddRange(Manufacturer_RAM);
                     break;
             }
-
-
         }
+    }
+
+
+    public class Files
+    {
+        int i;
+        public static string Cases = File.ReadAllText("Case_Manufacturers.txt");
+        static int n = Cases.Length;
+        public string[] PCcases = new string[34];
+
+
+
+
+        public Files()
+        {
+            int n = Cases.Length;
+            string[] st = Cases.Split(',');
+            for (i = 0; i < st.Length; i++)
+                PCcases[i] = st[i];
+        }
+
+
     }
 }
